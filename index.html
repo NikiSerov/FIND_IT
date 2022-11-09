@@ -33,14 +33,15 @@
             </div>
         </div>
         <div class="AR-container">
-            <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+            <a-scene embedded 
+            arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
                 <a-assets>
                     <a-asset-item id="animated-asset"
                         src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf">
                     </a-asset-item>
                 </a-assets>
 
-                <a-marker type='pattern' patternUrl="src/markers/photo_2022-11-09 22.57.07.iset">
+                <a-marker type='barcode' value='7'>
                     <a-box position='0 0 0' color="yellow"></a-box>
                 </a-marker>
 
@@ -48,6 +49,11 @@
                     <a-entity gltf-model="#animated-asset" scale="2">
                     </a-entity>
                 </a-marker>
+
+                <a-marker type='barcode' value='8'
+                    collada-model=”url(src/models/Porygon_ColladaMax.DAE)”>
+                </a-marker>
+
                 <a-entity camera></a-entity>
             </a-scene>
         </div>
