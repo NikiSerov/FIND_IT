@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FIND IT!</title>
+    <meta name="description" content="FIND IT!">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <img src="src/images/title.png" alt="FIND IT!" width="auto" height="80px">
+        </div>
+    </header>
+    <main class="main">
+        <div class="background-container">
+            <video autoplay muted loop class="video1" width="100%">
+                <source src="src/videos/video1.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop class="video2" width="100%">
+                <source src="src/videos/video2.mp4" type="video/mp4">
+            </video>
+            <div class="gif-container">
+                <img src="src/images/porygon-pokemon.gif" alt="porygon" class="porygon-gif">
+                <img src="src/images/porygon-gif2.gif" alt="porygon" class="porygon-gif2">
+            </div>
+        </div>
+        <div class="AR-container">
+            <a-scene embedded arjs>
+                <a-marker preset='hiro'> 
+                  <a-box position="0 1 1" radius="0.9" color="#ffcc03"></a-sphere>
+                </a-marker>
+                <a-entity camera></a-entity>
+              </a-scene>
+        </div>
+        <!-- <button class="previous-button"><img src="src/images/icons/previous.png" alt="previous" width="120px"
+                height="120px" class="previous-button-img"></button>
+        <button class="next-button"><img src="src/images/icons/next.png" alt="next" width="120px" height="120px"
+                class="next-button-img"></button> -->
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <img src="src/images/HAPPY BIRTHDAY.png" alt="FIND IT!" width="auto" height="75px" class="footer-img">
+        </div>
+    </footer>
+</body>
