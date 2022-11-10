@@ -48,7 +48,7 @@
                 </a-assets>
 
                 <a-marker type='barcode' value='8'>
-                    <a-entity gltf-model="#pokeball" scale="1 1 1" animation="property: rotation; 
+                    <a-entity gltf-model="#pokeball" scale="0.2 0.2 0.2" animation="property: rotation; 
                                                                               to: 0 360 0; 
                                                                               dur: 5000; 
                                                                               loop: true; 
@@ -65,7 +65,8 @@
                 </a-marker>
 
                 <a-entity light="type: ambient; color: #AAA"></a-entity>
-                <a-entity light="type: directional; color: #AAA; intensity: 1" position="-0.5 1 1"></a-entity>
+                <a-entity light="type: directional; color: #AAA; intensity: 5" position="-0.5 1 1"></a-entity>
+                <a-entity light="type: directional; color: #AAA; intensity: 5" position="0.5 -1 -1"></a-entity>
 
                 <a-entity camera></a-entity>
             </a-scene>
