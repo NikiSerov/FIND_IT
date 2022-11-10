@@ -45,10 +45,7 @@
                 </a-marker>
 
                 <a-marker type='barcode' value='7'>
-                    <a-entity gltf-model="#porygon" scale="2 2 2">
-                        <a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite">
-                        </a-animation>
-                    </a-entity>
+                    <a-entity gltf-model="#porygon" scale="2 2 2" animation="property: rotation; to: 360 0 0; loop: true; easing: linear"></a-entity>
                 </a-marker>
 
                 <a-entity camera></a-entity>
