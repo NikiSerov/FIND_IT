@@ -33,17 +33,17 @@
             </div>
         </div>
         <div class="AR-container">
-            <a-scene light="defaultLightsEnabled: false" embedded arjs='sourceType: webcam; 
-                      debugUIEnabled: false; 
-                      detectionMode: mono_and_matrix; 
-                      matrixCodeType: 3x3;'>
+            <a-scene embedded arjs='sourceType: webcam; 
+                                    debugUIEnabled: false; 
+                                    detectionMode: mono_and_matrix; 
+                                    matrixCodeType: 3x3;'>
                 <a-assets>
                     <a-asset-item id="porygon" src="src/models/porygon/scene.gltf">
                     </a-asset-item>
                 </a-assets>
 
                 <a-assets>
-                    <a-asset-item id="pokeball" src="src/models/pokeball/model.dae">
+                    <a-asset-item id="pokeball" src="https://raw.githubusercontent.com/NikiSerov/FIND_IT/main/src/models/pokeball/model.dae">
                     </a-asset-item>
                 </a-assets>
 
@@ -65,7 +65,7 @@
                 </a-marker>
 
                 <a-entity light="type: ambient; color: #AAA"></a-entity>
-                <a-entity light="type: directional; color: #FFF; intensity: 5" position="-0.5 1 1"></a-entity>
+                <!-- <a-entity light="type: directional; color: #FFF; intensity: 5" position="-0.5 1 1"></a-entity> -->
 
                 <a-entity camera></a-entity>
             </a-scene>
