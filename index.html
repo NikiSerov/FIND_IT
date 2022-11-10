@@ -43,12 +43,12 @@
                 </a-assets>
 
                 <a-assets>
-                    <a-asset-item id="pokeball" src="src/models/pokeball/scene.gltf">
+                    <a-asset-item id="pokeball" src="src/models/pokeball/model.dae">
                     </a-asset-item>
                 </a-assets>
 
                 <a-marker type='barcode' value='8'>
-                    <a-entity gltf-model="#pokeball" scale="1 1 1" animation="property: rotation; 
+                    <a-entity collada-model="#pokeball" scale="1 1 1" animation="property: rotation; 
                                                                              to: 0 360 0; 
                                                                              dur: 5000; 
                                                                              loop: true; 
@@ -65,7 +65,7 @@
                 </a-marker>
 
                 <a-entity light="type: ambient; color: #AAA"></a-entity>
-                <a-entity light="type: directional; color: #FFF; intensity: 1" position="-0.5 1 1"></a-entity>
+                <a-entity light="type: directional; color: #FFF; intensity: 5" position="-0.5 1 1"></a-entity>
 
                 <a-entity camera></a-entity>
             </a-scene>
