@@ -33,8 +33,10 @@
             </div>
         </div>
         <div class="AR-container">
-            <a-scene light="defaultLightsEnabled: true" embedded
-                arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+            <a-scene light="defaultLightsEnabled: true" embedded arjs='sourceType: webcam; 
+                      debugUIEnabled: false; 
+                      detectionMode: mono_and_matrix; 
+                      matrixCodeType: 3x3;'>
                 <a-assets>
                     <a-asset-item id="porygon" src="src/models/scene.gltf">
                     </a-asset-item>
@@ -45,8 +47,16 @@
                 </a-marker>
 
                 <a-marker type='barcode' value='7'>
-                    <a-entity gltf-model="#porygon" scale="2 2 2" animation="property: rotation; to: 0 0 360; dur: 5000; loop: true; easing: linear"></a-entity>
+                    <a-entity gltf-model="#porygon" scale="2 2 2" animation="property: rotation; 
+                                                                             to: 0 360 0; 
+                                                                             dur: 5000; 
+                                                                             loop: true; 
+                                                                             easing: linear">
+                    </a-entity>
                 </a-marker>
+
+                <a-entity light="type: ambient; color: #BBB"></a-entity>
+                <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
 
                 <a-entity camera></a-entity>
             </a-scene>
